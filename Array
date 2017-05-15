@@ -1,0 +1,14 @@
+" Reemplazar con "0" las cifras impares de un array
+
+def reemplaza_cero(vector)
+
+for i in 0...vector.size
+vector[i] = 0 if vector[i] % 2 != 0
+end
+ 
+return vector
+
+end
+
+valores = [13,4,5,6,21,10]
+puts reemplaza_cero(valores)
