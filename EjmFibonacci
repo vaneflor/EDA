@@ -1,0 +1,19 @@
+# Devolver la suma de los n primeros  numeros de la serie de Fibonacci
+
+def fibonacci (numero)
+x = 0
+y = 1
+serie = []
+serie << x
+serie << y
+suma =  x + y
+	for i in 1..numero -2
+		z = x + y
+		x = y
+		y = z        
+		serie << y
+		suma = suma + z		
+	end
+	suma
+end
+puts fibonacci(7)
