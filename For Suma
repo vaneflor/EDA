@@ -1,0 +1,15 @@
+# multiplicar dos numeros usando for
+
+def multiplicar(n1,n2)
+  suma=0
+  for i in 1..n2 
+   suma=suma+n1
+ end
+  return suma
+end
+
+print "Ingrese el primer numero:"
+num1=gets.to_i
+print "Ingrese el primer numero:"
+num2=gets.to_i
+puts "El resultado es:" + multiplicar(num1,num2).to_s
