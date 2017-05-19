@@ -1,0 +1,40 @@
+def matriz_original(dimension)
+matriz=Array.new
+cadena=""
+  for i in 0...dimension
+   matriz[i]=[]  
+   cadena =""
+   puts "Ingrese " + dimension.to_s + " valores numéricos para la matriz " + (i+1).to_s + " : "
+      for j in 0...dimension
+      valor=gets.to_i
+      matriz[i][j]=valor 
+      cadena =cadena+ matriz[i][j].to_s + " "       
+      end  
+    matriz[i]=cadena
+  end
+  puts " "
+return matriz
+end
+
+def matriz_transpuesta(matriz_original)
+puts matriz_original
+matriz_T= Array.new
+cad=""
+for i in 0...matriz_original.size
+matriz_T[i]=[]
+  cad=""
+  for j in 0...matriz_original.size
+  puts "j= "+  j.to_s+ " i= " + i.to_s
+    matriz_T[i][j]=matriz_original[j][i]
+    #cad =cad+ matriz_T[i][j].to_s + " "
+  puts matriz_original[j][i]
+  puts "otra linea"
+  end
+   matriz_T[i]=cad
+end
+puts " "
+puts matriz_T
+return matriz_T
+end 
+
+matriz_transpuesta(matriz_original(3))
