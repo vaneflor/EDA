@@ -1,0 +1,9 @@
+def restasSucev(a,b)
+  if (a<b)
+   cont=0
+ else
+   cont=1+restasSucev(a-b,b)
+ end
+ return cont
+end
+puts restasSucev(9,3)
