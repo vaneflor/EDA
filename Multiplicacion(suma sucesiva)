@@ -1,0 +1,9 @@
+def sumaSucev(a,b)
+if (b==0)
+	cont=0
+else
+	cont= a+sumaSucev(a,b-1)
+end
+	return cont
+end	
+puts sumaSucev(5,4)
