@@ -1,13 +1,14 @@
 #devuelve el numero par
 def sumapares(n, divisor)
-  if n == divisor
-      return false
-  end
+  
   if n % divisor == 0
-      return true
+    return true
   end
-  sumapares(n, divisor + 1)
+  sumapares(n-1, divisor + 1)
+  return false
 end
-puts sumapares(2,2) 
+
+puts sumapares(4,2) 
+
 #2,4,6,8,10
 
