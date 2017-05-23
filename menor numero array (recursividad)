@@ -1,0 +1,26 @@
+#verificar funcionamiento
+#devuelve el numero menor de un array
+def menor(s,ini,fin)
+     min=0
+     dev=0
+     puts s
+    if ini == fin
+        min = s[ini]
+        puts "este es el menor " + s[ini].to_s
+    else
+        min = menor(s,ini+1,fin)
+      
+        if s[ini] < min
+            dev = s[ini]
+            
+        else
+            dev = min
+            
+        end
+    end
+    
+    return dev
+end
+
+valores=[1]
+puts menor(valores,2,10) 
